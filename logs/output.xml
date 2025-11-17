@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.14.0 on win32)" generated="2025-11-14T17:49:34.689182" rpa="false" schemaversion="5">
+<suite id="s1" name="Todo" source="C:\Users\wesle\OneDrive\Documentos\Teste Robot Framework\todo.robot">
+<test id="s1-t1" name="Adicionar três atividades e validar filtro de concluídas" line="7">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-11-14T17:49:34.931263" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\wesle\\OneDrive\\Documentos\\Teste Robot Framework\\logs\\browser\\traces\\temp\\d65974b4-f856-497a-ac0f-d39a5d514337"}</msg>
+<msg time="2025-11-14T17:49:34.961798" level="INFO">Starting Browser process C:\Users\wesle\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:54112</msg>
+<msg time="2025-11-14T17:49:35.747895" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\wesle\\OneDrive\\Documentos\\Teste Robot Framework\\logs\\browser\\traces\\temp\\d65974b4-f856-497a-ac0f-d39a5d514337"}</msg>
+<arg>browser=chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-11-14T17:49:34.930542" elapsed="0.817622"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-11-14T17:49:36.610884" level="INFO">Successfully initialized new page object and opened url: https://todomvc.com/examples/react/dist/</msg>
+<msg time="2025-11-14T17:49:36.610963" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>https://todomvc.com/examples/react/dist/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-11-14T17:49:35.752437" elapsed="0.858684"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-11-14T17:49:36.655203" level="INFO">Waited for Element with selector text=todos at state visible</msg>
+<arg>text=todos</arg>
+<arg>visible</arg>
+<arg>5</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-11-14T17:49:36.611564" elapsed="0.043821"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-11-14T17:49:36.656507" level="INFO">Fills the text 'Valor01' in the given field.</msg>
+<arg>id=todo-input</arg>
+<arg>Valor01</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-11-14T17:49:36.655834" elapsed="0.020174"/>
+</kw>
+<kw name="Press Keys" owner="Browser">
+<arg>id=todo-input</arg>
+<arg>Enter</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given key combination into element found by ``selector``.</doc>
+<status status="PASS" start="2025-11-14T17:49:36.676631" elapsed="0.048611"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-11-14T17:49:36.726590" level="INFO">Fills the text 'Valor02' in the given field.</msg>
+<arg>id=todo-input</arg>
+<arg>Valor02</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-11-14T17:49:36.725672" elapsed="0.015389"/>
+</kw>
+<kw name="Press Keys" owner="Browser">
+<arg>id=todo-input</arg>
+<arg>Enter</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given key combination into element found by ``selector``.</doc>
+<status status="PASS" start="2025-11-14T17:49:36.741910" elapsed="0.019252"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-11-14T17:49:36.762690" level="INFO">Fills the text 'Valor03' in the given field.</msg>
+<arg>id=todo-input</arg>
+<arg>Valor03</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-11-14T17:49:36.761616" elapsed="0.012648"/>
+</kw>
+<kw name="Press Keys" owner="Browser">
+<arg>id=todo-input</arg>
+<arg>Enter</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given key combination into element found by ``selector``.</doc>
+<status status="PASS" start="2025-11-14T17:49:36.775045" elapsed="0.017679"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-11-14T17:49:36.793815" level="INFO">Clicks the element '//label[normalize-space(text())="Valor02"]/preceding-sibling::input'.</msg>
+<arg>//label[normalize-space(text())="Valor02"]/preceding-sibling::input</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-11-14T17:49:36.793228" elapsed="0.040699"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-11-14T17:49:36.835180" level="INFO">Clicks the element 'css=a[href="#/completed"]'.</msg>
+<arg>css=a[href="#/completed"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-11-14T17:49:36.834411" elapsed="0.089415"/>
+</kw>
+<msg time="2025-11-14T17:49:36.938716" level="INFO">Switching context to context=167153bb-5fc1-494b-af62-3439509af872 in CURRENT</msg>
+<msg time="2025-11-14T17:49:36.949122" level="INFO">Successfully changed active context: context=167153bb-5fc1-494b-af62-3439509af872</msg>
+<msg time="2025-11-14T17:49:37.020269" level="INFO">Successfully closed Context</msg>
+<status status="PASS" start="2025-11-14T17:49:34.929597" elapsed="1.994658"/>
+</test>
+<test id="s1-t2" name="Excluir atividade concluída e validar filtro de concluídas" line="28">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-11-14T17:49:37.026180" level="INFO">Switching browser to browser=ba8604a6-0c7b-40ce-8d90-9855332c5bcf</msg>
+<msg time="2025-11-14T17:49:37.028888" level="INFO">Successfully changed active browser: browser=ba8604a6-0c7b-40ce-8d90-9855332c5bcf</msg>
+<msg time="2025-11-14T17:49:37.029026" level="INFO">Reusing existing browser with id: browser=ba8604a6-0c7b-40ce-8d90-9855332c5bcf</msg>
+<arg>browser=chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-11-14T17:49:37.025282" elapsed="0.003843"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-11-14T17:49:37.543152" level="INFO">Successfully initialized new page object and opened url: https://todomvc.com/examples/react/dist/</msg>
+<msg time="2025-11-14T17:49:37.543296" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>https://todomvc.com/examples/react/dist/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-11-14T17:49:37.029560" elapsed="0.513958"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-11-14T17:49:37.571044" level="INFO">Waited for Element with selector text=todos at state visible</msg>
+<arg>text=todos</arg>
+<arg>visible</arg>
+<arg>5</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-11-14T17:49:37.544116" elapsed="0.027096"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-11-14T17:49:37.572596" level="INFO">Fills the text 'Valor01' in the given field.</msg>
+<arg>id=todo-input</arg>
+<arg>Valor01</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-11-14T17:49:37.571661" elapsed="0.016589"/>
+</kw>
+<kw name="Press Keys" owner="Browser">
+<arg>id=todo-input</arg>
+<arg>Enter</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given key combination into element found by ``selector``.</doc>
+<status status="PASS" start="2025-11-14T17:49:37.588719" elapsed="0.042852"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-11-14T17:49:37.632886" level="INFO">Fills the text 'Valor02' in the given field.</msg>
+<arg>id=todo-input</arg>
+<arg>Valor02</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-11-14T17:49:37.632032" elapsed="0.012489"/>
+</kw>
+<kw name="Press Keys" owner="Browser">
+<arg>id=todo-input</arg>
+<arg>Enter</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given key combination into element found by ``selector``.</doc>
+<status status="PASS" start="2025-11-14T17:49:37.645202" elapsed="0.020963"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-11-14T17:49:37.667405" level="INFO">Fills the text 'Valor03' in the given field.</msg>
+<arg>id=todo-input</arg>
+<arg>Valor03</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-11-14T17:49:37.666566" elapsed="0.010684"/>
+</kw>
+<kw name="Press Keys" owner="Browser">
+<arg>id=todo-input</arg>
+<arg>Enter</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given key combination into element found by ``selector``.</doc>
+<status status="PASS" start="2025-11-14T17:49:37.677687" elapsed="0.014693"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-11-14T17:49:37.693437" level="INFO">Fills the text 'Valor04' in the given field.</msg>
+<arg>id=todo-input</arg>
+<arg>Valor04</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-11-14T17:49:37.692835" elapsed="0.012076"/>
+</kw>
+<kw name="Press Keys" owner="Browser">
+<arg>id=todo-input</arg>
+<arg>Enter</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given key combination into element found by ``selector``.</doc>
+<status status="PASS" start="2025-11-14T17:49:37.705420" elapsed="0.016370"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-11-14T17:49:37.722610" level="INFO">Clicks the element '//label[normalize-space(text())="Valor03"]/preceding-sibling::input'.</msg>
+<arg>//label[normalize-space(text())="Valor03"]/preceding-sibling::input</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-11-14T17:49:37.722069" elapsed="0.043944"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-11-14T17:49:37.767396" level="INFO">Clicks the element 'xpath=//button[@class='clear-completed' and text()='Clear completed']'.</msg>
+<arg>xpath=//button[@class='clear-completed' and text()='Clear completed']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-11-14T17:49:37.766573" elapsed="0.040552"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-11-14T17:49:37.808121" level="INFO">Clicks the element 'css=a[href="#/completed"]'.</msg>
+<arg>css=a[href="#/completed"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-11-14T17:49:37.807491" elapsed="0.081659"/>
+</kw>
+<msg time="2025-11-14T17:49:37.903394" level="INFO">Switching context to context=3224963a-eb69-4893-b1ba-b5ea0d7655d2 in CURRENT</msg>
+<msg time="2025-11-14T17:49:37.910258" level="INFO">Successfully changed active context: context=3224963a-eb69-4893-b1ba-b5ea0d7655d2</msg>
+<msg time="2025-11-14T17:49:37.974447" level="INFO">Successfully closed Context</msg>
+<status status="PASS" start="2025-11-14T17:49:37.021315" elapsed="0.868242"/>
+</test>
+<test id="s1-t3" name="Adicionar quatro atividades e limpar a concluída" line="57">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-11-14T17:49:37.981489" level="INFO">Switching browser to browser=ba8604a6-0c7b-40ce-8d90-9855332c5bcf</msg>
+<msg time="2025-11-14T17:49:37.985655" level="INFO">Successfully changed active browser: browser=ba8604a6-0c7b-40ce-8d90-9855332c5bcf</msg>
+<msg time="2025-11-14T17:49:37.985936" level="INFO">Reusing existing browser with id: browser=ba8604a6-0c7b-40ce-8d90-9855332c5bcf</msg>
+<arg>browser=chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-11-14T17:49:37.980334" elapsed="0.005723"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-11-14T17:49:38.445550" level="INFO">Successfully initialized new page object and opened url: https://todomvc.com/examples/react/dist/</msg>
+<msg time="2025-11-14T17:49:38.445684" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>https://todomvc.com/examples/react/dist/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-11-14T17:49:37.986551" elapsed="0.459517"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-11-14T17:49:38.475977" level="INFO">Waited for Element with selector text=todos at state visible</msg>
+<arg>text=todos</arg>
+<arg>visible</arg>
+<arg>5</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-11-14T17:49:38.446540" elapsed="0.029659"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-11-14T17:49:38.477934" level="INFO">Fills the text 'Valor01' in the given field.</msg>
+<arg>id=todo-input</arg>
+<arg>Valor01</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-11-14T17:49:38.476703" elapsed="0.013946"/>
+</kw>
+<kw name="Press Keys" owner="Browser">
+<arg>id=todo-input</arg>
+<arg>Enter</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given key combination into element found by ``selector``.</doc>
+<status status="PASS" start="2025-11-14T17:49:38.491411" elapsed="0.036258"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-11-14T17:49:38.528922" level="INFO">Fills the text 'Valor02' in the given field.</msg>
+<arg>id=todo-input</arg>
+<arg>Valor02</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-11-14T17:49:38.528132" elapsed="0.015625"/>
+</kw>
+<kw name="Press Keys" owner="Browser">
+<arg>id=todo-input</arg>
+<arg>Enter</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given key combination into element found by ``selector``.</doc>
+<status status="PASS" start="2025-11-14T17:49:38.544251" elapsed="0.020881"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-11-14T17:49:38.566572" level="INFO">Fills the text 'Valor03' in the given field.</msg>
+<arg>id=todo-input</arg>
+<arg>Valor03</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-11-14T17:49:38.565725" elapsed="0.013112"/>
+</kw>
+<kw name="Press Keys" owner="Browser">
+<arg>id=todo-input</arg>
+<arg>Enter</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given key combination into element found by ``selector``.</doc>
+<status status="PASS" start="2025-11-14T17:49:38.579512" elapsed="0.019520"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-11-14T17:49:38.600767" level="INFO">Fills the text 'Valor04' in the given field.</msg>
+<arg>id=todo-input</arg>
+<arg>Valor04</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-11-14T17:49:38.599856" elapsed="0.010918"/>
+</kw>
+<kw name="Press Keys" owner="Browser">
+<arg>id=todo-input</arg>
+<arg>Enter</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given key combination into element found by ``selector``.</doc>
+<status status="PASS" start="2025-11-14T17:49:38.611256" elapsed="0.013047"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-11-14T17:49:38.625038" level="INFO">Clicks the element '//label[normalize-space(text())="Valor04"]/preceding-sibling::input'.</msg>
+<arg>//label[normalize-space(text())="Valor04"]/preceding-sibling::input</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-11-14T17:49:38.624577" elapsed="0.052671"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-11-14T17:49:38.678659" level="INFO">Clicks the element 'xpath=//button[@class='clear-completed' and text()='Clear completed']'.</msg>
+<arg>xpath=//button[@class='clear-completed' and text()='Clear completed']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-11-14T17:49:38.677766" elapsed="0.047950"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-11-14T17:49:38.726940" level="INFO">Clicks the element 'css=a[href="#/completed"]'.</msg>
+<arg>css=a[href="#/completed"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-11-14T17:49:38.726154" elapsed="0.073711"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-11-14T17:49:43.801114" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-11-14T17:49:38.800328" elapsed="5.000964"/>
+</kw>
+<msg time="2025-11-14T17:49:43.819504" level="INFO">Switching context to context=00e21f1a-cd11-4e67-bc59-817ecc905807 in CURRENT</msg>
+<msg time="2025-11-14T17:49:43.828001" level="INFO">Successfully changed active context: context=00e21f1a-cd11-4e67-bc59-817ecc905807</msg>
+<msg time="2025-11-14T17:49:43.891970" level="INFO">Successfully closed Context</msg>
+<status status="PASS" start="2025-11-14T17:49:37.975862" elapsed="5.826145"/>
+</test>
+<doc>Cenarios de testes do Gerenciamento de atividades To-Do</doc>
+<status status="PASS" start="2025-11-14T17:49:34.690398" elapsed="9.206236"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Todo" id="s1" pass="3" fail="0" skip="0">Todo</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
