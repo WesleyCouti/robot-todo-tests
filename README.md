@@ -53,6 +53,9 @@ pip install robotframework
 pip install robotframework-browser
 rfbrowser init
 
+
+
+
 Executar o teste
 
 robot nome_do_arquivo.robot
