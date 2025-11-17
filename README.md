@@ -1,4 +1,4 @@
-# 📝 Testes Automatizados – Gerenciamento de Atividades (To-Do)
+# Testes Automatizados – Gerenciamento de Atividades (To-Do)
 
 Este repositório contém testes automatizados utilizando **Robot Framework** com a **Browser Library** (Playwright), validados na aplicação de exemplo **To-Do**:  
 https://todomvc.com/examples/react/dist/
@@ -7,7 +7,7 @@ Os testes têm como objetivo verificar o fluxo de criação, finalização, excl
 
 ---
 
-## 📌 Tecnologias utilizadas
+## Tecnologias utilizadas
 
 - **Robot Framework**
 - **Browser Library (Playwright)**
@@ -16,7 +16,7 @@ Os testes têm como objetivo verificar o fluxo de criação, finalização, excl
 
 ---
 
-## 📂 Estrutura dos Testes
+## Estrutura dos Testes
 
 O arquivo contém três cenários principais:
 
@@ -42,7 +42,7 @@ O arquivo contém três cenários principais:
 
 ---
 
-## ▶️ Como executar os testes
+## Como executar os testes
 
 ### **1. Instalar dependências**
 
